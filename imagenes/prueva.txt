@@ -1,0 +1,105 @@
+<div id="Contenedor">
+        <img src="imagenes/logotec.jpg">
+        <div id="primero">
+            <h3>1. Introducción a los métodos numéricos</h3>
+            <p>
+                Hoy en día, gran parte de la tecnología actual depende de la solución de modelos matemáticos, desde la programación empotrada de una calculadora científica y el cálculo estructural de un edificio multinivel con estructuras de acero, hasta el diseño y simulación de aeronaves y vuelos espaciales. La solución de un modelo matemático relativamente sencillo puede obtenerse de manera analítica.<br>
+                En ocasiones, para la gran mayoría de los modelos matemáticos del mundo real, las soluciones analíticas pueden no existir o ser extremadamente complejas, por lo cual se recurre a métodos numéricos que aproximen las soluciones dentro de ciertos márgenes de tolerancia.<br>
+                El análisis de los métodos numéricos nos permite realizar estimaciones tanto de la eficiencia o complejidad de los algoritmos asociados, así como de la confiabilidad de los resultados numéricos obtenidos durante su aplicación.<br>
+                Entre las disciplinas que hacen uso intensivo de los métodos numéricos podemos mencionar:
+            </p>
+            <br>
+        </div>
+        <div id="segundo">
+            <img src="imagenes/cbasicos.jpg">
+            <h3>1.2 Conceptos básicos: cifra significativa, precisión, exactitud, incertidumbre y sesgo.</h3>
+            <br>
+            <h4>Cifra significativa</h4>
+            <p>
+                El concepto de cifra significativa lo podemos definir como aquella que aporta información no ambigua ni superflua acerca de una determinada medida experimental, son cifras significativas de un numero vienen determinadas por su error.<br>
+                Son cifras que ocupan una posición igual o superior al orden o posición de error.
+                Cuando se emplea un número en un cálculo, debe haber seguridad de que pueda usarse con confianza.<br>
+                El concepto de cifras significativas tiene dos implicaciones importantes en el estudio de los métodos numéricos.<br>
+                1.- Los métodos numéricos obtienen resultados aproximados. Por lo tanto, se debe desarrollar criterios para especificar que tan precisos son los resultados obtenidos.<br>
+                2.- Aunque ciertos números representan número específicos, no se pueden expresar exactamente con un número finito de cifras.<br>
+                <br>
+                <br>
+                Reglas de operaciones con cifras significativas.<br>
+                Regla 1: los resultados experimentales se expresan con una sola cifra dudosa, e indicando con + - la incertidumbre en la medida.<br>
+                Regla 2: las cifras significativas se cuentan de izquierda a derecha, a partir del primer dígito diferente de cero y hasta el digito dudoso.<br>
+                Regla 3: al sumar o restar dos números decimales, el numero de cifras decimales del resultado es igual al de la cantidad con el menor número de ellas.<br>
+                Regla 4: al multiplicar o dividir dos números, el numero de cifras significativas del resultado es igual al del factor con menos cifras.<br>
+            </p>
+            <br>
+            <h4>Precisión</h4>
+            <p>
+                Se refiere a la dispersión del conjunto de valores obtenidos de mediciones repetidas de una magnitud.<br>
+                Cuanto menor es la dispersión mayor la precisión. Una medida común de la variabilidad es la desviación estándar de las mediciones y la precisión se puede estimar como una función de ella.
+            </p>
+            <br>
+            <h4>Exactitud</h4>
+            <p>
+                Se refiere a cuán cerca del valor real se encuentra el valor medido. En términos estadísticos, la exactitud está relacionada con el sesgo de una estimación. Cuanto menor es el sesgo más exacto es una estimación.<br>
+                También se refiere a la aproximación de un numero o de una medida al valor verdadero que se supone representa.
+                Cuando expresamos la exactitud de un resultado se expresa mediante el error absoluto que es la diferencia entre el valor experimental y el valor verdadero.<br>
+                También es la mínima variación de magnitud que puede apreciar un instrumento.
+            </p>
+            <br>
+            <h4>Incertidumbre</h4>
+            <p>
+                Incertidumbre también se le conoce como Imprecisión. Se refiere al grado de alejamiento entre sí, a las diversas aproximaciones a un valor verdadero.
+                Situación bajo la cual se desconocen las probabilidades de ocurrencia asociados a los diferentes resultados de un determinado evento.
+            </p>
+            <br>
+            <h4>Sesgo</h4>
+            <p>
+                Existe sesgo cuando la ocurrencia de un error no aparece como un hecho aleatorio (al azar) advirtiéndose que este ocurre en forma sistemática Es un alejamiento sistemático del valor verdadero a calcular.
+            </p>
+            <br>
+            <br>
+        </div>
+        <div id="tercero">
+            <img src="imagenes/eredondeo.jpg">
+            <h3>1.3 Tipos de errores.</h3>
+            <p>
+                ERROR DE REDONDEO<br>
+                Muchas veces, los computadores cortan los números decimales entre e 17° y 12° decimal introduciendo así un error de redondeo<br>
+                Por ejemplo, el valor de "e" se conoce como 2.718281828... Hasta el infinito.<br>
+                Si cortamos el número en 2.71828182 (8 cifras significativas luego del punto decimal)estamos obteniendo u error de<br>
+                E = 2.718281828 -2.71828182 = 0.000000008...<br>
+                Sin embargo, como no consideramos que el número que seguía al corte era mayor que 5,entonces nos convenía dejar el número como 2.71828183,caso en el cual el error sería solo de<br>
+                E = 2.118281828 -2.11828183 = -0.000000002...<br>
+                ,que en términos absolutos es mucho menor que el anterior.<br>
+                En general, el error de corte de las computadoras será muy inferior al error introducido por un usuario,que generalmente corta a un menor número de cifras significativas.<br>
+                <br>
+                ERRORES DE TRUNCAMIENTO.<br>
+                Los errores de truncamiento tienen relación con el método de aproximación que se usará ya que generalmente frente a una serie infinita de términos, se tenderá a cortar el número de términos, introduciendo en ese momento un error, por no utilizar la serie completa (que se supone es exacta).<br>
+                En una iteración, se entiende como el error por no seguir iterando y seguir aproximándose a la solución. En un intervalo que se subdivide para realizar una serie de cálculos sobre él, se asocia al número de paso, resultado de dividir el intervalo "n" veces.<br>
+                <br>
+        </div>
+        <div id="cuarto">
+            <h3>1.4 Software de cómputo numérico.</h3>
+            <p>
+                
+            </p>
+            <br>
+        </div>
+        <div id="quito">
+            <h3>1.5 Métodos iterativos.</h3>
+            <p>
+                En matemática computacional, un método iterativo trata de resolver un problema (como una ecuación o un sistema de ecuaciones) mediante aproximaciones sucesivas a la solución, empezando desde una estimación inicial. Esta aproximación contrasta con los métodos directos, que tratan de resolver el problema de una sola vez (como resolver un sistema de ecuaciones Ax=b encontrando la inversa de la matriz A). Los métodos iterativos son útiles para resolver problemas que involucran un número grande de variables (a veces del orden de millones), donde los métodos directos tendrían un coste prohibitivo incluso con la potencia del mejor computador disponible.<br>
+                <br>
+                Puntos fijos atractivos<br>
+                Si una ecuación puede ponerse en la forma f(x) = x, y una solución x es un punto fijo atractivo de la función f, entonces puede empezar con un punto x1 en la base de atracción de x, y sea xn+1 = f(xn) para n ≥ 1, y la secuencia {xn}n ≥ 1 convergerá a la solución x.<br>
+                <br>
+                Sistemas lineales<br>
+                En el caso de un sistema lineal de ecuaciones, las dos clases principales de métodos iterativos son los métodos iterativos estacionarios y los más generales métodos del subespacio de Krylov<br>
+                <br>
+                Métodos iterativos estacionarios<br>
+                Los métodos iterativos estacionarios resuelven un sistema lineal con un operador que se aproxima al original; y basándose en la medida de error (el residuo), desde una ecuación de corrección para la que se repite este proceso. Mientras que estos métodos son sencillos de derivar, implementar y analizar, la convergencia normalmente sólo está garantizada para una clase limitada de matrices.<br>
+                <br>
+                Convergencia<br>
+                Dado que estos métodos forman una base, el método converge en N iteraciones, donde N es el tamaño del sistema. Sin embargo, en la presencia de errores de redondeo esta afirmación no se sostiene; además, en la práctica N puede ser muy grande, y el proceso iterativo alcanza una precisión suficiente mucho antes. El análisis de estos métodos es difícil, dependiendo de lo complicada que sea la función del espectro del operador.
+            </p>
+        </div>
+    </div>

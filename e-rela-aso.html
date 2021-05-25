@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body id="programas">
+    <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+    <br>
+    <br>
+    <form id="formu-rela-asolud">
+        <label>Medida tomada: </label>
+        <input type="number" id="num1" autofocus placeholder="Ingrese numero">
+        <br>
+        <label>Medida real: </label>
+        <input type="number" id="num2" autofocus placeholder="Ingrese numero">
+        <br>
+        <p>El Error Absoluto es: <span id="el-resultado1"></span></p>
+        <p>El Error Relativo es: <span id="el-resultado2"></span></p>
+        <br>
+        <button type="button" onclick="calcular();">Calcular</button>
+        <button onclick="limpiar1();">Limpiar</button>
+        
+    </form>
+    
+    <form id="formu-redon">
+        <label>Medida a redondear: </label>
+        <input type="number" id="redon" autofocus placeholder="Ingrese numero">
+        <br>
+        <p>Se a redondeado a: <span id="redondeo"></span></p>
+        <br>
+        <button type="button" onclick="redondeo();">Redondear</button>
+        <button onclick="limpiar2();">Limpiar</button>
+    </form>
+
+    <script type="text/javascript" src="funciones.js"></script>
+    <br>
+    <input id="volver" type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+
+    <footer id="PIE">
+        <h4>Todos los derechos reservados</h4>
+        <p>Sigenos en nuestras redes</p>
+        <ul>
+            <li><a id="link1" href="https://m.facebook.com/profile.php?id=100009655551478&paipv=0" target="blank">Pedro
+                    Eduardo Ruedas Velasco</a></li>
+            <li><a id="link2" href="https://m.facebook.com/profile.php?id=100016441965549&paipv=0" target="blank">Adriel
+                    David Molina Cifuentes</a></li>
+            <li><a id="link3" href="https://m.facebook.com/levi.hernandezmendez.9?ref=bookmarks" target="blank">Levi
+                    Magdiel Hernandez Mendez</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

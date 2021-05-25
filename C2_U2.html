@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos Numericós</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+
+<body id="C2_U2">
+    <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+
+    <div id="Contenedor2">
+        <b id="c2">C2_U2: 2.Métodos de solución de ecuaciones</b><br>
+        <br>
+        <b id="c2-t1">2.1. Métodos de intervalo.</b><br>
+        <br>
+        Los métodos de los intervalos utilizan una propiedad muy importante, consistente en el hecho del cambio de signo
+        de una función en inmediaciones de una raíz.<br>
+        Se llaman métodos de los intervalos porque se necesitan como mínimo dos valores que forman un intervalo que
+        encierra la raíz..<br>
+        <br>
+        <br>
+        <b id="c2-t2">2.2 Método de bisección.</b><br>
+        <br>
+        Este es uno de los métodos mas sencillos y de fácil intuición para resolver ecuaciones en una variable,
+        también conocido como método del intervalo medio, este se basa en el teorema del valor intermedio,
+        el cual establece que toda función continua f en un intervalo cerrado [a,b] toma todos los valores que se hallan
+        entre f(a) y f(b). Esto es que todo valor entre f(a) y f(b) es la imagen de al menos un valor del intervalo
+        [a,b].
+        En caso de que f(a) y f(b) tengan signos opuestos, el valor cero seria un valor intermedio entre f(j) y f(e),
+        por lo que con certeza existe un p en [a,b] que cumple f(p)=0. De esta forma, se asegura la existencia de al
+        menos
+        una solución de la ecuación f(a)=0.
+        <br>
+        <br>
+        <b id="c2-t3">2.3 Método de aproximaciones sucesivas.</b><br>
+        <br>
+        El m´etodo de Aproximaciones sucesivas representa la esencia de los procesos iterativos ya que
+        permite definir una ecuaci´on de recurrencia que, en aparencia, no tiene sentido desde el punto de
+        vista algebraico, pero que resulta muy atinada iterativamente hablando ya que toma un valor inicial
+        que se mejora a trav´es de las iteraciones.
+        Sin embargo, el m´etodo como tal no es ciento por ciento aplicable para cualquier ecuaci´on algebraica
+        o trascendente, debe vigilarse estrictamentu su criterio de convergencia; no obstante, se utiliza como
+        base para completar otros m´etodos abiertos.<br>
+        <br>
+        <br>
+        <b id="c2-t4">2.4 Métodos de interpolación.</b><br>
+        <br>
+        <b>Método de la falsa posición.</b>
+        es una alternativa basada en una visualización gráfica, un inconveniente del
+        método de bisección es que al dividir el intervalo de xi a xu en intervalos iguales, no se toman en
+        consideración las magnitudes de f(xi) y f(xu). Un método alternativo que aprovecha esta visualización gráfica
+        consiste en unir los puntos con una línea recta.<br>
+        La intersección de esta línea con el eje de la x representa una
+        mejor aproximación de la raíz. El hecho de que se reemplace la curva por una línea recta da una falsa posición
+        de la raíz, de aquí el nombre de método de la falsa posición, también se le conoce como el método de
+        interpolación lineal.<br>
+        Aunque el método de la falsa posición parecería ser siempre la mejor opción entre los métodos cerrados, hay
+        casos donde funciona de manera deficiente. En efecto, hay ciertos casos donde el método de bisección ofrece
+        mejores resultados.<br>
+        <b>Método de Newton-Raphson:</b>
+        Tal vez, de las fórmulas para localizar raíces, esta fórmula sea la más ampliamente utilizada. Si el valor
+        inicial para la raíz es xi, entonces se puede trazar una tangente desde el punto [xi,f(xi)] de la curva. Por lo
+        común, el punto donde esta tangente cruza al eje x representa una aproximación mejorada de la raíz.
+        <b>Método de la secante:</b>
+        Un problema potencial en la implementación del método de Newton-Raphson es la evaluación de la derivada. Aunque
+        esto no es un inconveniente para los polinomios ni para muchas otras funciones, existen algunas funciones cuyas
+        derivadas en ocasiones resultan muy difíciles de calcular. En dichos casos, la derivada se puede aproximar
+        mediante una diferencia finita dividida hacia atrás,
+        <br>
+        <b id="c2-t5">2.5 Aplicaciones..</b><br>
+        <br>
+        La primera aplicación, tomada de la ingeniería química, proporciona un excelente ejemplo de cómo los métodos
+        para determinar raíces permiten usar fórmulas realistas en la ingeniería práctica; además, demuestra de qué
+        manera la eficiencia del método de Newton-Raphson se emplea cuando se requiere de un gran número de cálculos
+        como método para la localización de raíces.<br>
+        Se utiliza el método de bisección para determinar cambios en la química del agua de lluvia debidos al aumento de
+        dióxido de carbono en la atmósfera.<br>
+        Las raíces de ecuaciones trascedentales se usan se usan en el diseño de un circuito eléctrico, al mismo tiempo
+        los métodos gráficos ofrecen un conocimiento del proceso de localización de raíces.
+        <br>
+        <h3>Documentos para reforsar</h3>
+        <h3><a href="PA3 Mapa conceptual.html" id="PA3MAPA">PA3.Mapa conceptual:</a></h3>
+        <br>
+        <h3><a href="PA3 Cuadro.html" id="PA3CUADRO">PA3.1 Cuadro o tabla comparativa</a></h3>
+        <br>
+        <h3><a href="PA4 REPORTE.html" id="PA3REPORTE">PA4. Reporte escrito y archivo en lenguaje de programación
+                seleccionado</a></h3>
+    </div>
+
+    <footer id="PIE">
+        <h4>Todos los derechos reservados</h4>
+        <p>Sigenos en nuestras redes</p>
+        <ul>
+            <li><a id="link1" href="https://m.facebook.com/profile.php?id=100009655551478&paipv=0" target="blank">Pedro
+                    Eduardo Ruedas Velasco</a></li>
+            <li><a id="link2" href="https://m.facebook.com/profile.php?id=100016441965549&paipv=0" target="blank">Adriel
+                    David Molina Cifuentes</a></li>
+            <li><a id="link3" href="https://m.facebook.com/levi.hernandezmendez.9?ref=bookmarks" target="blank">Levi
+                    Magdiel Hernandez Mendez</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
